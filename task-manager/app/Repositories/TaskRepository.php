@@ -37,4 +37,9 @@ class TaskRepository
     {
         $task->delete();
     }
+
+    public function getTasksByStatus(string $status): Collection
+    {
+        return Task::where('status', $status)->get(); 
+    }
 }

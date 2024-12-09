@@ -30,8 +30,9 @@ class TaskController extends Controller
         return response()->json($task, 201);
     }
 
-    public function show(Task $task): JsonResponse
+    public function show(string $id): JsonResponse
     {
+        $task = $this->taskService->getTask($id);
         return response()->json($task);
     }
 
@@ -46,4 +47,14 @@ class TaskController extends Controller
         $this->taskService->deleteTask($task);
         return response()->json(null, 204);
     }
+
+    public function getTasksByStatus(Request $request)
+    {
+
+        $status = $request->query('status');
+        $tasks = $this->taskService->getTasksByStatus($status); 
+        return response()->json($tasks, 200);
+
+    }
+
 }
