@@ -71,7 +71,7 @@ class TaskService
         }
     }
 
-    public function updateTask(Task $task, array $data): Task
+public function updateTask(Task $task, array $data): Task
     {
         try {
             $validator = Validator::make($data, [
@@ -109,4 +109,5 @@ class TaskService
 
         return $this->taskRepository->getTasksByStatus($status);
     }
+    
 }
