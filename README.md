@@ -6,6 +6,16 @@ O projeto utiliza **Laravel** como framework principal, seguindo boas práticas 
 
 ---
 
+## 🌟 Funcionalidades
+
+- Criação de tarefas com validação de entrada.
+- Listagem de tarefas com filtro por status.
+- Atualização de tarefas existentes.
+- Exclusão de tarefas.
+- Testes automatizados para validação de lógica e integrações.
+
+---
+
 ## 🧩 Decisões de Design
 
 O projeto segue uma arquitetura modular e escalável baseada em camadas. Isso facilita a manutenção, a expansão e a separação de responsabilidades.
@@ -121,12 +131,3 @@ Os testes garantem a qualidade e a confiabilidade do sistema.
 - **MySQL**: Banco de dados relacional.
 - **PokéAPI**: API para buscar dados sobre Pokémons.
 
----
-
-## 🌟 Funcionalidades
-
-- Criação de tarefas com validação de entrada.
-- Listagem de tarefas com filtro por status.
-- Atualização de tarefas existentes.
-- Exclusão de tarefas.
-- Testes automatizados para validação de lógica e integrações.
